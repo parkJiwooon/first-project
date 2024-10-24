@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Black+Ops+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 225px 225px 225px;
+        width: 900px;
+        margin: 0 auto;
+        height: 1611px;
+        background-color: #fff8ed;
+        gap: 32px;
+        text-align: center;
+        padding: 48px 51px 48px 49px;
+      }
+      .header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        border-top: double 10px;
+        border-bottom: double 10px;
+      }
+      .header-p1,
+      .header-h1 {
+        font-family: "Black Ops One", system-ui;
+      }
+      .header-p1 {
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 35px;
+      }
+      .header-h1 {
+        font-size: 60px;
+        line-height: 100px;
+        margin-top: 10px;
+      }
+      .header-p2 {
+        font-family: "Aleo", serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 19px;
+        margin-top: 10px;
+        margin-bottom: 35px;
+      }
+      .summary {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        text-align: center;
+        font-family: "Aleo", serif;
+      }
+      .summary-p1 {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 5px;
+        margin-bottom: 32px;
+      }
+      .summary-p2 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .content {
+        font-family: "PT Serif", serif;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: justify;
+      }
+      .content1 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      .content2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+      .content3 {
+        grid-column: 3/4;
+        grid-row: 3/5;
+      }
+      .content-p {
+        margin-top: 3px;
+        margin-bottom: 13px;
+      }
+      .content1 .content-p:last-of-type,
+      .content2 .content-p:last-of-type {
+        margin-bottom: 3px;
+      }
+      .content3 .content-p {
+        margin-top: 2px;
+        margin-bottom: 28px;
+      }
+      .content-img {
+        width: 225px;
+        height: 146px;
+      }
+      .ad {
+        grid-column: 1/3;
+        grid-row: 4/5;
+      }
+      .ad-img {
+        width: 480px;
+        height: 342.26px;
+      }
+      .footer {
+        grid-column: 1/4;
+        grid-row: 5/6;
+        font-family: "Aleo", serif;
+        font-size: 18px;
+        line-height: 21px;
+        border-top: 4px double;
+        border-bottom: 4px double;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <p class="header-p1">2024.10 - 2025.03</p>
+        <h1 class="header-h1">DEV COURSE</h1>
+        <p class="header-p2">With. SUCODING</p>
+      </div>
+      <div class="summary">
+        <p class="summary-p1">
+          This intensive course equips developers with the skills to build
+          modern, scalable web applications from scratch.
+        </p>
+        <p class="summary-p2">TAXONOMY AND NATURAL HISTORY</p>
+      </div>
+      <div class="content content1">
+        <p class="content-p">
+          <strong>HTML:</strong> Start with the fundamentals of web structure.
+          Learn how to create semantic HTML that improves accessibility, search
+          engine optimization (SEO), and collaboration with CSS. This section
+          covers everything from simple elements like headings and paragraphs to
+          advanced forms and multimedia integration.
+        </p>
+        <p class="content-p">
+          <strong>CSS:</strong> Dive deep into styling web pages with CSS.
+          Understand how to create responsive layouts using Flexbox and Grid.
+          This module also explores animations, transitions, and the use of
+          preprocessors like SASS for scalable design systems.
+        </p>
+        <p class="content-p">
+          <strong>JavaScript:</strong> Gain expertise in core JavaScript
+          concepts, including variables, functions, and events
+        </p>
+      </div>
+      <div class="content content2">
+        <p class="content-p">
+          Progress into advanced topics like asynchronous programming with
+          promises and async/await, and learn how to manipulate the DOM
+          dynamically to create interactive user interfaces.
+        </p>
+        <p class="content-p">
+          <strong>React.js:</strong> Build modern single-page applications
+          (SPAs) with React.js. Explore the power of React hooks, state
+          management, and component-based design. You'll also learn how to
+          integrate APIs and deploy your applications efficiently.
+        </p>
+        <p class="content-p">
+          <strong>Vue.js:</strong> Develop lightweight and fast front-end
+          applications using Vue.js. This module focuses on Vue’s reactivity
+          system, component structure, and Vue Router for building dynamic,
+          multi-page applications.
+        </p>
+      </div>
+      <div class="content content3">
+        <img src="media/thumb 1.png" alt="데브코스 광고" class="content-img" />
+        <p class="content-p">
+          In today’s digital age, front-end development has become an essential
+          skill for anyone aspiring to work in the tech industry. As businesses
+          increasingly shift their focus to creating engaging online
+          experiences, the demand for skilled front-end developers continues to
+          rise. This article outlines what a comprehensive front-end development
+          course entails, the key skills you’ll acquire, and how it can
+          significantly enhance your career prospects.
+        </p>
+        <p class="content-p">
+          Front-end development refers to the part of web development that
+          focuses on the visual elements of a website or application. It
+          encompasses everything that users interact with directly, including
+          layouts, design, buttons, text, images, and overall functionality. A
+          front-end developer’s primary goal is to create a seamless and
+          engaging user experience (UX) through effective design and coding
+          practices.
+        </p>
+      </div>
+      <div class="ad">
+        <img src="media/ad 1.png" alt="프로그래머스 광고" class="ad-img" />
+      </div>
+      <div class="footer">
+        <p>@copy right sucoding</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 내부 스타일 -->
+    <style>
+      /*
+        1. 전체 선택자 -> * (asterisk)
+      */
+      #title,
+      .title,
+      h3 {
+        color: red;
+      }
+      body ul li p {
+        color: blue;
+      }
+      h1::before{
+        content: "before";
+      }
+      input::placeholder{
+        color: red;
+      }
+      a:hover {
+        color: red;
+      }
+      a:active{
+        color: orange;
+      }
+      input:focus {
+        color: red;
+        border: 1px solid red;
+        outline: none;
+      }
+      input:checked{
+        appearance: none;
+      }
+      input:checked + label{
+        color: red;
+      }
+      input:disabled {
+        background-color: red;
+      }
+      input:enabled {
+        background-color: blue;
+      }
+      li:first-child{
+        color: red;
+      }
+    </style>
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" href="practice.css" />
+  </head>
+  <body>
+    <h1 id="title">Sample Text</h1>
+    <h2 class="title">Sample Text2</h2>
+    <h3>Sample Text3</h3>
+
+    <!-- 인라인 스타일 -->
+    <h3 style="color: green">Sample Text3</h3>
+    <h4>Sample Text</h4>
+    <p class="title underline">Sample Text</p>
+
+    <a href="https://www.naver.com/login">네이버 바로가기</a>
+    <a href="https://www.naver.com">네이버 바로가기</a>
+    <a href="https://www.google.com">구글 바로가기</a>
+    <input type="text">
+
+  </body>
+</html>

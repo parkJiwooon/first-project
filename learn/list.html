@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML목록</title>
+  </head>
+  <body>
+    <strong>내가 좋아하는 과일</strong>
+    <ul type="square">
+      <li>사과</li>
+      <li>바나나</li>
+      <li>수박</li>
+    </ul>
+
+    <strong>오늘 할 일</strong>
+    <ol>
+      <li>과자 먹기</li>
+      <li>에그마요 샌드위치 먹기</li>
+      <li>곱창볶음밥 먹기</li>
+    </ol>
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>HTML은 웹 문서의 구조를 설계하기 위한 목적으로 개발된 언어이다.</dd>
+      <dt>CSS</dt>
+      <dd>CSS는 웹 문서를 꾸미기 위한 목적으로 개발된 언어이다.</dd>
+    </dl>
+
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>오렌지</li>
+    </ul>
+
+    <ol>
+      <li>아침운동</li>
+      <li>아침식사</li>
+      <li>출근</li>
+    </ol>
+
+    <ul>
+      <li>
+        운동
+        <ul type="circle">
+          <li>달리기</li>
+          <li>수영</li>
+        </ul>
+      </li>
+    </ul>
+    <ol>
+      <li>쇼핑</li>
+      <li>요리</li>
+    </ol>
+
+    <ul>
+      <li>운동</li>
+      <li>
+        <ul>
+          <li>달리기</li>
+          <li>수영</li>
+        </ul>
+      </li>
+    </ul>
+
+    <a href="sub.html" target="_blank" rel="noreferrer noopener">클릭</a>
+
+    <img src="http://127.0.0.1:5500/learn/list.html" alt="" />
+
+    <a href="https://www.google.com">
+      <img
+        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fko%2Ffree-png-twylv&psig=AOvVaw3iexcAT7Ay_onhxIh9q9Zf&ust=1729045389542000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDj5ZOqj4kDFQAAAAAdAAAAABAE"
+        alt="구글 로고"
+      />
+    </a>
+
+    <form>
+      <p><input type="checkbox" />(필수)약관 동의</p>
+      <p><input type="checkbox" />(필수)룰루 동의</p>
+      <p><input type="checkbox" />(선택)랄라 동의</p>
+
+      <p><input type="radio" name="gender" />여자</p>
+      <p><input type="radio" name="gender" />남자</p>
+    </form>
+
+    <form>
+      <!-- 명시적인 방법 -->
+      <label for="uid">아이디</label>
+      <input type="email" id="uid" />
+
+      <!-- 암묵적인 방법 -->
+      <label>비밀번호:<input type="password" /></label>
+
+      <!-- 암시적 + 명시적 방법 -->
+      <label for="uid">비밀번호:<input type="password" id="uid" /></label>
+      <button type="reset">이메일 인증</button>
+      <button type="submit">회원가입</button>
+      <select name="" id="">
+        <optgroup label="">
+          <option value="강북">강북</option>
+          <option value=""></option>
+          <option value=""></option>
+        </optgroup>
+      </select>
+    </form>
+    <form action="">
+      <fieldset>
+        <label for="area">
+          지역
+          <select name="area" size="3" multiple>
+            <optgroup label="서울시">
+              <option value="강북" selected>강북</option>
+              <option value="중랑">중랑</option>
+              <option value="은평">은평</option>
+            </optgroup>
+            <option value="경기도">
+              <option value="용인">용인</option>
+              <option value="수원">수원</option>
+              <option value="성남">성남</option>
+            </option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+     
+    <table border="1">
+      <!-- <colgroup span="4" style="width: 100px;"></colgroup> -->
+      <col style="width: 80px;" />
+      <col style="width: 100px;" />
+      <col style="width: 50px;" />
+      <col style="width: 70px;" />
+      <caption>
+        음료 가격표
+      </caption>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>1개</td>
+        <td rowspan="2">1,000원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>환타</td>
+        <td>1개</td>
+      </tr>
+      <tr>
+        <td>총 금액</td>
+        <td colspan="3">3,500원</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <caption>
+        2024년 성적표
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">구분</th>
+          <th scope="col">중간고사</th>
+          <th scope="col">기말고사</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2" scope="rowgroup">전공</th>
+          <td>A+</td>
+          <td>B+</td>
+        </tr>
+        <tr>
+          <td>A+</td>
+          <td>C+</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1">
+      <caption>
+        인적 정보
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>김철수</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>이영희</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1">
+      <caption>
+        성적표
+      </caption>
+      <thead>
+        <tr>
+          <th>학년</th>
+          <th>이름</th>
+          <th>성적</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>김가영</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>김나영</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>김다영</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td rowspan="3">2</td>
+          <td>김라영</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>김마영</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>김바영</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td rowspan="3">3</td>
+          <td>김사영</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td>김아영</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>김자영</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">총합</td>
+          <td>499</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
